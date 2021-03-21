@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#Django files
+**/migrations
+*.DS_Store
+**/__pycache__
+**/.DS_Store
+
+
 # C extensions
 *.so
 
