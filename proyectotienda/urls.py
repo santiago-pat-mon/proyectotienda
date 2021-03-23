@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from proyectotienda import views
-
+from inventory import views as views_inventory
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello-world/',views.hello_world),
     path('hi/',views.hi),
+    path('distributors/', views_inventory.Show_distributor, name='distributor')
 ]
